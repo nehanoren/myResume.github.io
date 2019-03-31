@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Mona - Model Agency HTML5 Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>RESUME</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img/core-img/favicon.ico">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+ html{
+  scroll-behavior: smooth;
+}
+  
+a {
+  color: #26a69a;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  color: #007888;
+}
+a:focus {
+  text-decoration: none;
+}
+p {
+  line-height: 1.5;
+}
+.wrapper-1 .btn,
+.wrapper-1 a.btn {
+  background: #008fa1;
+  color: #fff;
+  padding: 8px 15px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+}
+.wrapper-1 .btn:hover,
+.wrapper-1 a.btn:hover {
+  color: #fff;
+  background: #00a5bb;
+}
+.wrapper-1 {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+  background: #f5f5f5;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #444;
+  overflow-x: hidden;
+  position: relative;
+}
+.section-1 {
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  padding: 45px;
+  background: #fff;
+  margin-bottom: 45px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.section-1:last-child {
+  margin-bottom: 0;
+}
+.section-title {
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-size: 24px;
+  text-align: center;
+}
+.timeline {
+  border-left: 3px solid #26a69a;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  position: relative;
+  padding: 0 30px;
+  margin-left: 280px;
+}
+.timeline .item {
+  position: relative;
+  margin-bottom: 45px;
+}
+.timeline .item:last-child {
+  margin-bottom: 0;
+}
+.timeline .item:before {
+  content: "";
+  position: absolute;
+  left: -43px;
+  top: 0;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #fff;
+  border: 3px solid #26a69a;
+}
+.timeline .item:after {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 6px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #26a69a;
+  z-index: 10;
+}
+.timeline .work-place {
+  position: relative;
+}
+.timeline .location {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  color: #8a8a8a;
+}
+.timeline .location .fa {
+  margin-right: 5px;
+}
+.timeline .place {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.timeline .job-meta {
+  position: absolute;
+  left: -280px;
+  top: 0;
+}
+.timeline .job-meta .title {
+  font-size: 18px;
+  color: #26a69a;
+}
+.timeline .job-meta .time {
+  color: #8a8a8a;
+}
+.timeline .job-desc {
+  color: #666;
+}
+.education-section .item {
+  margin-bottom: 45px;
+}
+.education-section .item-inner {
+  padding: 0 30px;
+}
+.education-section .degree {
+  font-size: 18px;
+  color: #26a69a;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+.education-section .education-body {
+  font-weight: 500;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.education-section .time {
+  color: #8a8a8a;
+  margin-bottom: 15px;
+}
+.education-section .desc {
+  color: #666;
+}
+.skills-section .subtitle {
+  font-size: 18px;
+  color: #8a8a8a;
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-weight: 300;
+}
+.skills-section .top-skills {
+  margin-bottom: 60px;
+}
+.skills-section .top-skills .item {
+  margin-bottom: 45px;
+}
+.skills-section .level {
+  color: #8a8a8a;
+  margin-bottom: 15px;
+}
+.skills-section .desc {
+  color: #666;
+}
+.skills-section .skill-tag {
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  padding: 6px 30px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #f5f5f5;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.chart-easy-pie {
+  positon: relative;
+}
+.chart {
+  width: 110px;
+  height: 110px;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.chart span {
+  line-height: 110px;
+}
+.chart canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.testimonials-section .testimonials-carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.testimonials-section .item {
+  padding-left: 60px;
+  margin-bottom: 45px;
+}
+.testimonials-section .quote {
+  border-left: none;
+  padding: 0;
+  font-size: 22px;
+  color: #666;
+  font-weight: 300;
+  position: relative;
+}
+.testimonials-section .source .name {
+  font-size: 16px;
+}
+.testimonials-section .source .position {
+  color: #8a8a8a;
+}
+.testimonials-section .fa-quote-left {
+  position: absolute;
+  left: -60px;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background: #26a69a;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 16px;
+}
+.testimonials-section .carousel-indicators {
+  bottom: 0;
+  margin-bottom: 0;
+}
+.testimonials-section .carousel-indicators li {
+  background-color: #bdbdbd;
+  border: none;
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  margin-right: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  cursor: pointer;
+}
+.testimonials-section .carousel-indicators li.active {
+  background-color: #26a69a;
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  margin-right: 8px;
+}
+.portfolio-section .filters {
+  list-style: none;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+  border-bottom: 1px solid #e8e8e8;
+}
+.portfolio-section .filters .type {
+  margin-right: 30px;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 15px;
+  color: #8a8a8a;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.portfolio-section .filters .type:last-child {
+  margin-right: 0;
+}
+.portfolio-section .filters .type.active {
+  color: #26a69a;
+  border-bottom: 2px solid #26a69a;
+}
+.portfolio-section .item {
+  margin-bottom: 30px;
+}
+.portfolio-section .item .figure {
+  margin-bottom: 0;
+}
+.portfolio-section .item-inner {
+  background: #26a69a;
+  color: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+.portfolio-section .item-inner:hover {
+  background: #00c5de;
+}
+.portfolio-section .item-inner:hover img {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+}
+.portfolio-section .item-inner .content {
+  padding: 30px;
+  padding-bottom: 75px;
+  position: relative;
+}
+.portfolio-section .item-inner .content a {
+  color: #fff;
+}
+.portfolio-section .item-inner .content .sub-title {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.portfolio-section .item-inner .content .meta {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+.portfolio-section .item-inner .content .action {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.portfolio-section .item-inner .link-mask {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.contact-section .intro {
+  position: relative;
+  padding: 30px;
+  padding-left: 190px;
+  font-size: 16px;
+  color: #666;
+}
+.contact-section .intro .profile-image {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 30px;
+}
+.contact-section .intro p {
+  margin-bottom: 15px;
+}
+.contact-section .service-list {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+.contact-section .service-list li {
+  margin-bottom: 15px;
+}
+.contact-section .service-list .fa {
+  color: #26a69a;
+}
+.contact-section .social {
+  margin-bottom: 0;
+}
+.contact-section .social li {
+  margin-right: 10px;
+}
+.contact-section .social li:last-child {
+  margin-right: 0;
+}
+.contact-section .social a {
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  color: #8a8a8a;
+}
+.contact-section .social a:hover {
+  color: #26a69a;
+}
+.footer .container {
+  padding: 30px;
+  color: #8a8a8a;
+  letter-spacing: 0.5px;
+}
+.footer .container a {
+  color: #8a8a8a;
+}
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .header .social {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .header .actions {
+    position: static;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .header .actions .btn {
+    margin-bottom: 15px;
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+  }
+  .header .actions .btn:last-child {
+    margin-bottom: 0;
+  }
+  .header .name {
+    font-size: 36px;
+  }
+  .header .title {
+    font-size: 22px;
+  }
+  .header .contact-info li {
+    margin-right: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    width: 100%;
+    display: inline-block;
+  }
+  .header .contact-info li:last-child {
+    margin-bottom: 0;
+  }
+  .section-1 {
+    padding: 30px;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+  .timeline {
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .timeline .place {
+    margin-bottom: 5px;
+  }
+  .timeline .job-meta {
+    position: static;
+    margin-bottom: 15px;
+  }
+  .education-section .item {
+    padding: 0;
+  }
+  .portfolio-section .filters .type {
+    font-size: 12px;
+    margin-right: 5px;
+    padding: 8px 5px;
+  }
+  .portfolio-section .item-inner .content {
+    padding: 15px;
+  }
+  .portfolio-section .item-inner .content .sub-title {
+    font-size: 14px;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .portfolio-section .item-inner .content .meta {
+    margin-bottom: 30px;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .portfolio-section .item-inner .content .action {
+    position: static;
+    font-size: 12px;
+  }
+  .contact-section .intro {
+    padding: 0;
+    text-align: center;
+  }
+  .contact-section .intro .profile-image {
+    position: static;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .contact-section .service-list {
+    margin-left: 0;
+  }
+  .contact-section .social {
+    margin: 0 auto;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+/* X-Large devices (large desktops, 1400px and up) */
+/* ======= Configure Style (Remove in production) ======= */
+.config-trigger {
+  position: absolute;
+  top: 30px;
+  left: -36px;
+  width: 36px;
+  height: 36px;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  text-decoration: none;
+}
+.config-trigger:hover {
+  background: #000;
+  text-decoration: none;
+}
+.config-trigger:hover .fa {
+  color: #fff;
+}
+.config-trigger .fa {
+  font-size: 22px;
+  padding-top: 7px;
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+}
+.config-panel {
+  position: absolute;
+  top: 160px;
+  right: -190px;
+  z-index: 30;
+  width: 190px;
+}
+.config-panel .panel-inner {
+  position: relative;
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.config-panel .panel-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.config-panel label {
+  color: #fff;
+}
+.config-panel #color-options {
+  margin-bottom: 0px;
+}
+.config-panel #color-options li a {
+  display: block;
+  width: 28px;
+  height: 20px;
+  border: 2px solid transparent;
+  margin-bottom: 10px;
+}
+.config-panel #color-options li a:hover {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+.config-panel #color-options li.active a {
+  border: 2px solid #fff;
+}
+.config-panel #color-options li.theme-1 a {
+  background: #00BCD4;
+}
+.config-panel #color-options li.theme-2 a {
+  background-color: #03A9F4;
+}
+.config-panel #color-options li.theme-3 a {
+  background-color: #009688;
+}
+.config-panel #color-options li.theme-4 a {
+  background-color: #4CAF50;
+}
+.config-panel #color-options li.theme-5 a {
+  background-color: #8BC34A;
+}
+.config-panel #color-options li.theme-6 a {
+  background-color: #C0CA33;
+}
+.config-panel #color-options li.theme-7 a {
+  background-color: #FFC107;
+}
+.config-panel #color-options li.theme-8 a {
+  background-color: #FF9800;
+}
+.config-panel #color-options li.theme-9 a {
+  background-color: #FF5722;
+}
+.config-panel #color-options li.theme-10 a {
+  background-color: #795548;
+}
+.config-panel #color-options li.theme-11 a {
+  background-color: #607D8B;
+}
+.config-panel #color-options li.theme-12 a {
+  background-color: #673AB7;
+}
+.config-panel #color-options li.theme-13 a {
+  background-color: #3F51B5;
+}
+.config-panel #color-options li.theme-14 a {
+  background-color: #2196F3;
+}
+.config-panel #color-options li.theme-15 a {
+  background-color: #9C27B0;
+}
+.config-panel #color-options li.theme-16 a {
+  background-color: #E91E63;
+}
+.config-panel .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: #fff;
+}
+.config-panel .close .fa {
+  color: #fff;
+}
+</style>
+<style>
+  .job-desc.btn{
+    position: relative;
+  font-size: 1.5rem;
+  font-weight: 150;
+  text-transform: uppercase;
+  border-radius: 100px;
+  overflow: hidden;
+  color: #fff;
+  height: 25px;
+  width: 55px;
+  }
+  .job-desc.btn:hover{
+    background: transparent;
+  text-align: center;
+
+  }
+  p{
+    text-align: justify;
+  }
+</style>
+<style>
+#skills ul {
+  list-style-type: none;
+}
+
+/*  3. Skills
+================================================================================ */
+#skills {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 960px;
+  padding: 50px;
+  background-color: black;
+  font: 14px Arial;
+  color: #ccc;
+}
+#skills li {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 6px;
+  color: white;
+}
+#skills li .bar-container,
+#skills li .bar {
+  position: absolute;
+  left: 0;
+  height: 5px;
+  border-radius: 5px;
+  content: "";
+}
+#skills li .bar-container {
+  bottom: -8px;
+  width: 100%;
+  background-color: #333;
+  text-align: right;
+}
+#skills li .bar-container .bar {
+  top: 0;
+}
+#skills li .bar-container .pct {
+  position: absolute;
+  top: -19px;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+</style>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="wrapper">
+      <div class="cssload-loader"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="monaNav">
+
+          <!-- Background Curve -->
+          <div class="bg-curve" style="background-image: url(./img/core-img/curve.png);"></div>
+
+          <!-- Logo -->
+          <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+          </div>
+
+          <!-- Menu -->
+          <div class="classy-menu">
+            <!-- Menu Close Button -->
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+
+            <!-- Nav Start -->
+            <div class="classynav">
+              <ul id="nav">
+                <li class="current-item"><a href="./index.html">Home</a></li>
+                <li><a href="#About">ABOUT</a>
+                  <ul class="dropdown">
+                    <li><a href="./portfolio.html">- Portfolio</a></li>
+                    <li><a href="./blog.html">- Blog</a></li>
+                  </ul>
+                </li>
+                <li><a href="#Experiences">Experiences</a>
+                <ul class="dropdown">
+                    <li><a href="./projects.html">- Projects</a></li>
+                  </ul>
+                </li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Contact">Contact</a></li>
+              </ul>
+
+              <!-- Search Icon -->
+            </div>
+            <!-- Nav End -->
+
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Top Search Area Start ***** -->
+  <!-- ***** Top Search Area End ***** -->
+
+  <!-- ***** Welcome Area Start ***** -->
+  <section class="welcome-area">
+    <!-- Welcome Slides -->
+    <div class="welcome-slides owl-carousel">
+
+      <!-- Single Welcome Slide -->
+      <div class="single-welcome-slide">
+        <!-- Background Curve -->
+        <div class="bg-curve" style="background-image: url(./img/core-img/curve.png);"></div>
+        <!-- Main Background Image -->
+        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url(./img/14.jpg);"></div>
+        <!-- Welcome Text -->
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <div class="welcome-text">
+                <h2 data-animation="bounceInUp" data-delay="400ms">"Ambitious"</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Social Info -->
+        <!-- Pager -->
+        <div class="slide-pager">
+          <a href="#">Next: 2</a>
+        </div>
+      </div>
+
+      <!-- Single Welcome Slide -->
+      <div class="single-welcome-slide">
+        <!-- Background Curve -->
+        <div class="bg-curve" style="background-image: url(./img/core-img/curve.png);"></div>
+        <!-- Main Background Image -->
+        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url(./img/15.jpg);"></div>
+        <!-- Welcome Text -->
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <div class="welcome-text">
+                <h2 data-animation="bounceInUp" data-delay="400ms">"Diligent"</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Social Info -->
+        <!-- Pager -->
+        <div class="slide-pager">
+          <a href="#">Next: 3</a>
+        </div>
+      </div>
+
+      <!-- Single Welcome Slide -->
+      <div class="single-welcome-slide">
+        <!-- Background Curve -->
+        <div class="bg-curve" style="background-image: url(./img/core-img/curve.png);"></div>
+        <!-- Main Background Image -->
+        <div class="main-bg-img bg-img" data-animation="fadeInUpBig" data-delay="200ms" style="background-image: url(./img/16.jpg);"></div>
+        <!-- Welcome Text -->
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <div class="welcome-text">
+                <h2 data-animation="bounceInUp" data-delay="400ms">"Hedonist"</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Social Info -->
+        <!-- Pager -->
+        <div class="slide-pager">
+          <a href="#">Next: 1</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ***** Welcome Area End ***** -->
+
+  <!-- ***** About Us Area Start ***** -->
+  <section class="mona-about-us-area mb-30 section-padding-80-0">
+    <div class="container">
+      <div class="row">
+
+        <!-- About Us Thumbnail -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="about-us-thumbnail mb-50 wow fadeInUp" data-wow-delay="100ms">
+            <span class="line"></span>
+            <img src="./img/18.jpg" alt="">
+            <span class="line2"></span>
+          </div>
+        </div>
+
+        <!-- About Us Thumbnail -->
+        <!-- About Us Content -->
+        <div class="col-12 col-lg-8" id="About">
+          <div class="about-us-content mb-50 wow fadeInUp" data-wow-delay="700ms">
+            <h2>ABOUT</h2>
+             <p>Electrical Engineer with a keen interest in hardware projects and exceptionally diverse skills in the electrical industry. Primarily focused on implementation of embedded systems. Excellent interpersonal and communication abilities, and possess a wide range of technical skills.</p>
+            <p>I find a lot of peace of peace and focus in striving to improve as an individual. I completed my bachelor's degree in electrical engineering in 2018 from Northern India Engineering College. I am a very well organized, diligent and a hard working person who is able to overcome obstacles in strategic ways. My main objective is to work with a dynamic and growth oriented organization and to successfully contribute towards the company's development while learning and growing with the same. To have job profile which is challenging and interesting with adequate opportunities to draw upon my strengths and to make positive contributions towards organizational growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <div class="wrapper-1 container-1" id="Experiences">
+        <section id="experiences-section" class="experiences-section section">
+            <h2 class="section-title">EXPERIENCES</h2>
+            <div class="timeline">
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place" align="center-left">PERSEVERANCE IS FAILING 19 TIMES AND SUCCEEDING THE 20TH</h3>
+                        <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>New Delhi,INDIA</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Almost an Engineer</div>
+                        <div class="time">2017 - 2018</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p><b>INTERNSHIP AT TECHNIPFMC</b> – Observation and study of various single-line diagrams, machinery calculations,
+electrical engineering activities required for distribution system of onshore terminal projects.</br>
+<b>KNOW8</b> – Organized a workshop on Quad-Copters with entries of 135 students, visit our cool website.</br>
+<b>MAJOR PROJECT</b> – Wifi enabled smart farm with monitoring and energy theft control system. Presented the
+system in an Inter-college major project competition.
+(Research Paper published in International Journal of Scientific and Research Publications, Volume 8,
+Issue 7, July 2018.)</p> 
+                    
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place" align="center-left">GREAT THINGS ARE NOT DONE BY IMPULSE, BUT BY A SERIES OF SMALL THINGS</br>
+                        BROUGHT TOGETHER</h3>
+                        <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>New Delhi,INDIA</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">75% Engineer</div>
+                        <div class="time">2016 - 2017</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p><b>IEEE STAR PROGRAM</b> – Taught enthusiastic young girls from Govt. Schools about use of computers and basic Microsoft applications.</br>
+<b>IEEE TECH MONITORING TEAM</b> – Managed to assemble data about the teachers with their majors and
+executed a system to provide help to students in research to directly contact their desired mentors.</br>
+<b>TRAINING IN EMBEDDED SYSTEMS (BY DUCAT)</b> – 6 weeks training in embedded systems and basics of
+embedded C language. Built obstacle detector robot, quad-copter, Bluetooth and GSM controlled robot and wifi
+controlled automated irrigation system.</br>
+<b>IEEE DSC (AS STUDENT DELIGATE)</b> ”Conference on Bootstrap Start up”- Created a website using HTML,CSS and JavaScript in
+which all the college events were displayed along with the registration details to provide a quicker access to all
+students, and the individuals with knowledge were also able to create their own events.
+</p> 
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">LIFE STARTS IN COLLEGE</h3>
+                        <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>New Delhi,INDIA</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">50% Engineer</div>
+                        <div class="time">2015 - 2016</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p><b>Won THE BEST PRIZE on IEEE Day</b> – Showcased IEEE-NIEC android application and achieved 120 downloads in 4 hours on Google Play-store.</br>
+                     <b>SCRATCH TO MARVELS (BY IEEE NIEC)</b> ”Workshop on basic electronics” – Made circuits including clap sensors,
+                      touch sensors, water-level sensors and universal logic gates.</br>
+                      <b>WEBSITE DEVELOPMENT (BY IEEE NIEC)</b> – Designed a basic HTML page customized using CSS
+                      providing information about girl child education and annual strategic data about the same.</br>
+                     <b>HOME TUTOR</b> – Provided home tuitions from classes 7th
+                       - 10th for science and mathematics.</p> 
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+                
+                
+            </div><!--//timeline-->
+            
+        </section><!--//section-->
+        
+        <section id="education-section" class="education-section section">
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="row" id="Education">
+                <div class="item col-12 col-md-4">
+                    <div class="item-inner">
+                        <h3 class="degree">BACHELORS IN ELECTRICAL & ELECTRONICS ENGG</h3>
+                        <div class="education-body">
+                            Northern India Engineering College
+                        </div><!--//education-body-->
+                        <div class="time">2014 - 2018</div>
+                        <div class="desc">
+                            Aggregate(%) – 77.06 
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-12 col-md-4">
+                    <div class="item-inner">
+                        <h3 class="degree">HIGHER SEC. CERTIFICATE</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CBSE)</h3>
+                        <div class="education-body">
+                            Queen Mary's School, Tis hazari, Delhi-54
+                        </div><!--//education-body-->
+                        <div class="time">2013 - 2014</div>
+                        <div class="desc">
+                            Percentage(%) – 79.6
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-12 col-md-4">
+                    <div class="item-inner">
+                        <h3 class="degree">SENIOR SEC. CERTIFICATE</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CBSE)</h3>
+                        <div class="education-body">
+                            Queen Mary's School, Tis hazari, Delhi-54
+                        </div><!--//education-body-->
+                        <div class="time">2011 - 2012</div>
+                        <div class="desc">
+                            Percentage(%) – 85.5 
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                
+            </div><!--//row-->
+        </section><!--//section-->
+        
+        
+        <section id="skills-section" class="skills-section section text-center">
+            <h2 class="section-title">PROFESSIONAL SKILLS</h2>
+            <div class="top-skills" id="Skills">
+                <h3 class="subtitle">TOP SKILLS</h3>
+                <div class="row">
+                    <div class="item col-12 col-md-4">
+                  
+                </div><!--//row-->
+            </div><!--//top-skills-->
+            
+            <div class="other-skills">
+                <div class="misc-skills">
+                  <span class="skill-tag">Electrical Systems</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Motors & drives</span>
+                    <span class="skill-tag">AutuCAD</span>
+                    <br>
+                    <span class="skill-tag">Team Building</span>
+                    <span class="skill-tag">PLC SCADA</span>
+                    <span class="skill-tag">PCB Designing</span>
+                    <span class="skill-tag">Embedded Systems</span>
+                    <span class="skill-tag">Management</span>
+                </div>
+            </div><!--//other-skills-->
+            
+        </section><!--//skills-section-->
+        <ul id="skills">  
+  <li>
+    HTML
+    <div class="bar-container">
+      <span class="bar" data-bar='{ "color": "#19f" }'>
+        <span class="pct">80%</span>
+      </span>
+    </div>
+  </li>
+  <li>
+    CSS
+    <div class="bar-container">
+      <span class="bar" data-bar='{ "color": "#27ae60", "delay": 600 }'>
+        <span class="pct">60%</span>
+      </span>
+    </div>
+  </li>
+  <li>
+    JavaScript
+    <div class="bar-container">
+      <span class="bar" data-bar='{ "color": "#9b59b6", "delay": 1800 }'>
+        <span class="pct">35%</span>
+      </span>
+    </div>
+  </li>
+  <li>
+    Embedded Systems
+    <div class="bar-container">
+      <span class="bar" data-bar='{ "color": "#ae8a33", "delay": 600 }'>
+        <span class="pct">65%</span>
+      </span>
+    </div>
+  </li>
+  <li>
+    AutoCAD
+    <div class="bar-container">
+      <span class="bar" data-bar='{ "color": "#ff9800", "delay": 1800 }'>
+        <span class="pct">30%</span>
+      </span>
+    </div>
+  </li>
+  <li>
+    Management
+    <div class="bar-container">
+      <span class="bar" data-bar='{ "color": "#e91e63"}'>
+        <span class="pct">85%</span>
+      </span>
+    </div>
+  </li>
+  <li>
+    PCB Designing
+    <div class="bar-container">
+      <span class="bar" data-bar='{ "color": "#009688", "delay": 1200 }'>
+        <span class="pct">40%</span>
+      </span>
+    </div>
+  </li>
+  <li>
+    Soft Skills
+    <div class="bar-container">
+      <span class="bar" data-bar='{ "color": "#bf360c" }'>
+        <span class="pct">82%</span>
+      </span>
+    </div>
+  </li>
+</ul> 
+</br>
+</br>
+        
+        <section id="testimonials-section" class="testimonials-section section">
+            <h2 class="section-title">INSPIRATIONS</h2>
+            
+            <div id="testimonials-carousel" class="testimonials-carousel carousel slide" data-interval="8000">
+                
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#testimonials-carousel" data-slide-to="1"></li>
+                    <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+                </ol>
+                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item carousel-item active">
+                        <blockquote class="quote">      
+                            <i class="fa fa-quote-left"></i>                            
+                            <p>“For all your days prepare and meet them ever alike When you are the anvil, bear - When you are the hammer, strike.”</p>
+                        </blockquote>    
+                        <div class="source">
+                            <div class="name">-A.P.J. Abdul Kalam, Wings of Fire</div>
+                            
+                        </div><!--//source-->   
+                                                       
+                    </div><!--//item-->
+                    <div class="item carousel-item">
+                        <blockquote class="quote">
+                            <p><i class="fa fa-quote-left"></i>
+                            “When each day is the same as the next, it’s because people fail to recognize the good things that happen in their lives every day that the sun rises.” </p>
+                            
+                        </blockquote>
+                        <div class="source">
+                            <div class="name">-Paulo Coelho, The Alchemist</div>
+                        </div><!--//source-->   
+               
+                    </div><!--//item-->
+                    <div class="item carousel-item">
+                        <blockquote class="quote">
+                            <p><i class="fa fa-quote-left"></i>
+                            "The best love is the kind that awakens the soul; that makes us reach for more; that plants a fire in our hearts and brings peace to our minds."</p>
+                        </blockquote>       
+                        <div class="source">
+                            <div class="name">-The Notebook</div>
+                        </div><!--//source-->          
+                    </div><!--//item-->
+                    
+                </div><!--//carousel-inner-->
+            </div><!--//testimonials-carousel-->
+            
+        </section><!--//section-->
+  
+        
+    </div><!--//wrapper-->
+    
+    
+    <!-- Single Service Area -->
+    
+  <!-- ***** About Us Area End ***** -->
+
+  <!-- ***** Model Area Start ***** -->
+
+  <!-- ***** Model Area End ***** -->
+
+  <!-- ***** Client Feedback Area Start ***** -->
+  <section class="clients-feedback-area section-padding-80 clearfix">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <div class="slider slider-for">
+
+            <!-- Client Feedback Text -->
+            <div class="client-feedback-text text-center">
+              <div class="quote-icon">
+                <i class="icon_quotations" aria-hidden="true"></i>
+              </div>
+              <div class="client-description text-center">
+                <h4>“There should be no boundaries to human endeavor. We are all different. However bad life may seem, there is always something you can do, and succeed at. While there’s life, there is hope.”</br> – Stephen Hawking, The Theory of Everything</h4>
+              </div>
+              
+            </div>
+
+            
+
+        <!-- Client Thumbnail Area -->
+      </div>
+    </div>
+  </section>
+  <!-- ***** Client Feedback Area End ***** -->
+
+  <!-- ***** CTA Area Start ***** -->
+  <!-- ***** CTA Area End ***** -->
+
+  <!-- ***** Blog Area Start ***** -->
+  
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area section-padding-80-0" id="Contact">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="single-footer-widget mb-60">
+            <!-- Logo -->
+            <a href="#" class="d-block mb-4"><img src="./img/core-img/logo.png" alt=""></a>
+            <div class="col-12 col-lg-6 col-xl-6">
+          <div class="google-maps mb-80">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7433239.526715591!2d73.58811122216092!3d24.536980722611723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!3m2!1d20.593684!2d78.96288!4m5!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew+Delhi%2C+Delhi!3m2!1d28.6139391!2d77.2090212!5e0!3m2!1sen!2sin!4v1554015450113!5m2!1sen!2sin" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+            <p>Find me on the provided links.
+            </br>Thank You!!!</p>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="single-footer-widget mb-60">
+            <!-- Widget Title -->
+            <h4 class="widget-title">Links</h4>
+
+            <!-- Catagories Nav -->
+            <nav>
+              <ul class="our-link">
+                <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./projects.html">PROJECTS</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-lg-4 col-xl-3">
+          <div class="single-footer-widget mb-60">
+            <!-- Widget Title -->
+            <h4 class="widget-title">Contact</h4>
+            <!-- Footer Content -->
+            <div class="footer-content mb-30">
+              <h6>New Delhi, INDIA</h6>
+            </div>
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="#" class="gmail" data-toggle="tooltip" data-placement="top" title="Gmail"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- All js -->
+  <script src="js/mona.bundle.js"></script>
+  <!-- Active js -->
+  <script src="js/default-assets/active.js"></script>
+  <script>
+    ;( function( $ ) {
+  "use strict";
+  
+  var $bars = $( ".bar" ),
+    methods = {
+      init: function() {
+        
+        // Bind events
+        methods.bindEvents();
+        
+      },
+      bindEvents: function() {
+
+        // Loop through each of the bars...
+        $bars.each( function() {
+
+          var $bar = $( this ),
+            $pct = $bar.find( ".pct" ),
+            data = $bar.data( "bar" );
+
+          setTimeout( function() {
+
+            $bar
+              .css( "background-color", data.color )
+              .animate({
+                "width": $pct.html()
+              }, data.speed || 3000, function() {
+
+                $pct.css({
+                  "color": data.color,
+                  "opacity": 1
+                });
+
+              });
+
+          }, data.delay || 0 );     
+
+        });
+
+      }
+    };
+  
+  // Initialize on page load
+  methods.init(); 
+    
+})( jQuery );
+  </script>
+
+</body>
+
+</html>

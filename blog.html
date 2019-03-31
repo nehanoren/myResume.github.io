@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Mona - Model Agency HTML5 Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Resume</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img/core-img/favicon.ico">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #c4c3ca;
+    overflow-x: hidden;
+    background-color: #14151a;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0;
+    line-height: 1.35;
+    color: #fff;
+}
+h5, .h5 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+::selection {
+    color: #fff;
+}
+::-moz-selection {
+    color: #fff;
+}
+::selection {
+    background-color: #000;
+}
+::-moz-selection {
+    background-color: #000;
+}
+.section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.over-hide{
+    overflow: hidden;
+}
+.primary-color{
+    color: #26a69a;
+}
+.padding-top-bottom-big {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.padding-top-big {
+    padding-top: 50px;
+}
+.padding-bottom-big {
+    padding-bottom: 140px;
+}
+.padding-top-bottom {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.padding-top {
+    padding-top: 50px;
+}
+.padding-bottom {
+    padding-bottom: 100px;
+}
+.section-title-wrap p{
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0;
+}
+.section-title-wrap h1{
+    margin: 0;
+    padding: 0;
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.1;
+}
+.background-dark {
+    background-color: #111;
+}
+
+/* #Cursor
+================================================== */
+
+* {
+  cursor: none;
+}
+.cursor {
+    --size: 8px;
+    height: var(--size);
+    width:  var(--size);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.cursor.cursor-shadow {
+    background-color: transparent;
+    border: 1px solid #fff;
+    --size: 40px;
+    transition: top .2s, left .2s,
+                width .2s, height .2s,
+                background-color .2s, border-color 0.2s;
+    transition-timing-function: ease-out;
+}
+.cursor.cursor-dot {
+    background: #26a69a;
+    transition: width .2s, height .2s;
+}
+.cursor-shadow.active {
+    --size: 80px;
+    border-color: rgba(255,255,255, 0);
+    background-color: rgba(255,255,255,.1);
+}
+.cursor-dot.active {
+    --size: 0;
+}
+a {
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+
+ 
+/* #Blog post
+================================================== */
+ 
+.blog-post-box{
+    position: relative;  
+    display: inline-block;
+    cursor: pointer;
+}
+.blog-post-box h5{
+    position: relative;  
+    text-transform: none;
+    cursor: pointer;
+    mix-blend-mode: difference;
+    z-index: 3;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear; 
+}
+.blog-post-box:hover h5{
+}
+.blog-post-box p{
+    position: relative;  
+    color: #c4c3ca;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    display: inline-block;
+    mix-blend-mode: luminosity;
+    padding: 4px 12px;
+    background-color: rgba(127,110,210,.8);
+    border-radius: 2px;
+    z-index: 4;
+}
+
+/* #Blog cursor images
+================================================== */
+ 
+.cursor.cursor-dot.active-blog-post-1,
+.cursor.cursor-dot.active-blog-post-2,
+.cursor.cursor-dot.active-blog-post-3,
+.cursor.cursor-dot.active-blog-post-4,
+.cursor.cursor-dot.active-blog-post-5,
+.cursor.cursor-dot.active-blog-post-6,
+.cursor.cursor-dot.active-blog-post-7 {
+    opacity: 0;
+}
+.cursor-shadow.active-blog-post-1,
+.cursor-shadow.active-blog-post-2,
+.cursor-shadow.active-blog-post-3,
+.cursor-shadow.active-blog-post-4,
+.cursor-shadow.active-blog-post-5,
+.cursor-shadow.active-blog-post-6,
+.cursor-shadow.active-blog-post-7 {
+    --size: 160px;
+    border-color: rgba(255,255,255, 0);
+    border-width: 0;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.cursor-shadow.active-blog-post-7 {
+    background-image: url('./img/17.jpg');
+}
+
+/* #Blog nav link
+================================================== */
+
+.blog-nav {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: #565b70;
+    font-size: 4vw;
+    opacity: 0.4;
+    transition: opacity .2s;
+    transition-timing-function: ease-out;
+}
+.blog-nav:hover {
+    opacity: 0.7;
+    color: #565b70;
+}
+
+/* #Link to page
+================================================== */
+
+.link-to-portfolio {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 20;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 3px;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('https://ivang-design.com/ig-logo.jpg');
+    box-shadow: 0 0 0 2px rgba(255,255,255,.1);
+    transition: opacity .2s, border-radius .2s, box-shadow .2s;
+    transition-timing-function: ease-out;
+}
+.link-to-portfolio:hover {
+    opacity: 0.8;
+    border-radius: 50%;
+    box-shadow: 0 0 0 20px rgba(255,255,255,.1);
+}
+
+@media (max-width: 991px) { 
+  h5, .h5 {
+      font-size: 1.2rem;
+  }
+  .section-title-wrap h1{
+      font-size: 4rem;
+  }
+  .blog-nav {
+      font-size: 7vw;
+  }
+}
+</style>
+<style>
+  .breadcrumb{
+    color: white;
+  }
+</style>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="wrapper">
+      <div class="cssload-loader"></div>
+    </div>
+  </div>
+  <div class="breadcumb-area">
+    <div class="container h-100">
+      <div class="row h-100 align-items-end">
+        <div class="col-12">
+          <div class="breadcumb--con">
+            <h2 class="title">Blog</h2>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html"><i class="fa fa-home" font-color="white"></i> Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section padding-top-big padding-bottom over-hide">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 section-title-wrap text-center parallax-fade-top">
+            <p class="primary-color">My Story</p>  
+            <h1>WHERE I<br>CAME FROM</h1>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <section class="mona-blog-area mb-50 section-padding-80-0">
+    <div class="container">
+      <div class="row">
+
+        <!-- Single Blog Post -->
+
+        <!-- Single Blog Post -->
+        <div class="col-12">
+          <div class="row" align="center">
+
+            <!-- Single Blog Post -->
+            <div class="col-12">
+              <div class="single-blog-post featured-post mb-30">
+                <div class="post-thumbnail">
+                  <a href="#"><img src="https://downloadwallpaperhd.net/laptop-wallpapers/work-wallpaper-hd-For-Laptop-Wallpaper.jpg" alt=""></a>
+                </div>
+                <div class="post-content">
+                  <div>
+                    <a href="#" class="post-title">ALL ABOUT MYSELF</a>
+                    <span class="post-date">30 March 2019</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Single Blog Post -->
+            
+
+      </div>
+    </div>
+  </section>
+
+    <div class="section padding-bottom-big over-hide">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mt-5" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+            <a href="#" class="cursor-link-blog-post-7">
+              <div class="blog-post-box">
+                <h5 align="justify">Experiences have played a significant role in my life and acted as pivotal points in my growth trajectory since childhood. School, tuitions, and college provided me a platform to develop my skills and showcase my capabilities which further made me more ambitious towards my goals. From being a shy kid to a confident individual, my journey has been pretty marvelous and quite erratic. I demonstrated my enthusiasm and managerial potential at the age of 16 by participating in numerous sports events, inter-school competitions, and even ranked highest in mathematics. I consistently built and carried forward these traits throughout the various stages of my life. Traveling, public speaking and community services further added dimensions to my personality and made me full of gratitude and joy. On the educational front, I have participated in workshops based on basic electronics, website-development, embedded-systems etc., attended seminars on start-ups, even got a fascinating opportunity to work with some and also published a paper in an international journal. And now, I look forward to adding a new experience to my existing gamut of experiences and take a step forward towards my goal - To become a post-graduate and to continue my studies in presence of some astounding resources.</h5></br>
+                <h5 align="justify">No good ending can be expected in the absence of the right beginning. Coming from the family of government employees, I had a natural inclination towards serving my country. To understand the intricacies of electrical circuits and robotics, after my high school I opted to pursue Bachelor of Technology (Electrical and Electronics Engineering), batch 2014-18 from Northern India Engineering College, Delhi and secured 76.8 % (Aggregate). During this course, I was able to sculpt myself into a whole new individual. I was exposed to various workshops and seminars after joining the IEEE society, including workshops on basic electronics, self-defence, hardware design using TI platforms, motors and drives, AutoCAD, PLC and SCADA, PCB designing, HTML, CSS, JAVASCRIPT, events like STAR Programme and IEEE DSC, I also took part in competitions like IEEE Extreme, IEEE Technorax and won “THE BEST PRIZE” award which escalated my confidence and helped to mold myself into a productive engineer. I was able to take my creativity to another level when I got the opportunity to create my small start-up Know8 and to work with Dawnrays. Along with my other 3 friends, I started a college-socializing online organization. We created a website using ‘bootstrap’ in which all the college events were displayed along with the registration details to provide a quicker access to all students, and the individuals with some knowledge were also able to create their own events. I took 6-weeks training in “Embedded Systems” after which I was able to construct line-following robots, obstacle detector robots, quad-copter etc. I gave home tuitions to students from 7th to 10th standard during the first 3 years of college. I did my internship from Technip FMC Pvt. Ltd, Noida. The main objective of the internship was to study single-line diagrams, machinery calculations, electrical engineering activities required for distribution system of onshore terminal projects and different client documents that are required before and after the bidding procedure of a power plant project. In the final year of graduation, I got an opportunity to work on the major project “Wifi Enabled Smart Farm with Real-Time Monitoring and Energy Theft Control System”. I presented this project in an Inter-college major project competition. My research paper was published in “International Journal of Scientific and Research Publications” in their July 2018 edition.</h5>
+              </div>
+            </a>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <div class="section padding-top-bottom over-hide background-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+            <a href="#" class="blog-nav cursor-link">WANNA KNOW MORE?</a>
+          </div>
+        </div>  
+      </div>
+    </div>
+  
+  <!-- Page cursor
+  ================================================== -->
+  
+  <div class="cursor cursor-shadow"></div>
+  <div class="cursor cursor-dot"></div>
+  
+  <!-- Link to page
+  ================================================== -->
+
+  <a href="https://themeforest.net/user/ig_design/portfolio"      class="link-to-portfolio cursor-link" target=”_blank”       ></a>
+
+
+
+
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="monaNav">
+
+          <!-- Background Curve -->
+          <div class="bg-curve" style="background-image: url(./img/core-img/curve.png);"></div>
+
+          <!-- Logo -->
+          <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+          </div>
+
+          <!-- Menu -->
+          <div class="classy-menu">
+            <!-- Menu Close Button -->
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+
+            <!-- Nav Start -->
+            <div class="classynav">
+                  <ul id="nav">
+                <li class="current-item"><a href="./index.html">Home</a></li>
+                <li><a href="#">ABOUTMe</a>
+                  <ul class="dropdown">
+                    <li><a href="./portfolio.html">- Portfolio</a></li>
+                    <li><a href="./blog.html">- Blog</a></li>
+                  </ul>
+                </li>
+                <li><a href="./index.html">Experiences</a>
+                <ul class="dropdown">
+                    <li><a href="./projects.html">- Projects</a></li>
+                  </ul>
+                </li>
+                <li><a href="./index.html">Education</a></li>
+                <li><a href="./index.html">Skills</a></li>
+                <li><a href="./index.html">Contact</a></li>
+              </ul>
+
+              <!-- Search Icon -->
+            </div>
+            <!-- Nav End -->
+
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Top Search Area Start ***** -->
+  <!-- ***** Top Search Area End ***** -->
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ***** Blog Area Start ***** -->
+  
+  <!-- ***** Blog Area End ***** -->
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area section-padding-80-0">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="single-footer-widget mb-60">
+            <!-- Logo -->
+            <a href="#" class="d-block mb-4"><img src="./img/core-img/logo.png" alt=""></a>
+            <p>Find me on the provided links.
+            </br>Thank You!!!</p>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="single-footer-widget mb-60">
+            <!-- Widget Title -->
+            <h4 class="widget-title">Links</h4>
+
+            <!-- Catagories Nav -->
+            <nav>
+              <ul class="our-link">
+                <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./projects.html">PROJECTS</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-lg-4 col-xl-3">
+          <div class="single-footer-widget mb-60">
+            <!-- Widget Title -->
+            <h4 class="widget-title">Contact</h4>
+            <!-- Footer Content -->
+            <div class="footer-content mb-30">
+              <h6>New Delhi, INDIA</h6>
+            </div>
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="#" class="gmail" data-toggle="tooltip" data-placement="top" title="Gmail"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- All js -->
+  <script src="js/mona.bundle.js"></script>
+  <!-- Active js -->
+  <script src="js/default-assets/active.js"></script>
+  <script>
+    //Page cursors
+  
+  $(window).mousemove(function(e) {     
+    $(".cursor").css({
+      left: e.pageX,
+      top: e.pageY
+    })    
+  })
+  $(".cursor-link")
+  .on("mouseenter", function() {   
+  $('.cursor').addClass("active")   
+  })
+  .on("mouseleave", function() {    
+  $('.cursor').removeClass("active")    
+  })    
+  //Blog page cursors with image  
+  //Blog post 1:
+  $(".cursor-link-blog-post-1")
+  .on("mouseenter", function() {   
+  $('.cursor').addClass("active-blog-post-1")   
+  })
+  .on("mouseleave", function() {    
+  $('.cursor').removeClass("active-blog-post-1")    
+  })  
+  //Blog post 2:
+  $(".cursor-link-blog-post-2")
+  .on("mouseenter", function() {   
+  $('.cursor').addClass("active-blog-post-2")   
+  })
+  .on("mouseleave", function() {    
+  $('.cursor').removeClass("active-blog-post-2")    
+  })  
+  //Blog post 3:
+  $(".cursor-link-blog-post-3")
+  .on("mouseenter", function() {   
+  $('.cursor').addClass("active-blog-post-3")   
+  })
+  .on("mouseleave", function() {    
+  $('.cursor').removeClass("active-blog-post-3")    
+  })    
+  //Blog post 4:
+  $(".cursor-link-blog-post-4")
+  .on("mouseenter", function() {   
+  $('.cursor').addClass("active-blog-post-4")   
+  })
+  .on("mouseleave", function() {    
+  $('.cursor').removeClass("active-blog-post-4")    
+  })  
+  //Blog post 5:
+  $(".cursor-link-blog-post-5")
+  .on("mouseenter", function() {   
+  $('.cursor').addClass("active-blog-post-5")   
+  })
+  .on("mouseleave", function() {    
+  $('.cursor').removeClass("active-blog-post-5")    
+  })    
+  //Blog post 6:
+  $(".cursor-link-blog-post-6")
+  .on("mouseenter", function() {   
+  $('.cursor').addClass("active-blog-post-6")   
+  })
+  .on("mouseleave", function() {    
+  $('.cursor').removeClass("active-blog-post-6")    
+  })    
+  //Blog post 7:
+  $(".cursor-link-blog-post-7")
+  .on("mouseenter", function() {   
+  $('.cursor').addClass("active-blog-post-7")   
+  })
+  .on("mouseleave", function() {    
+  $('.cursor').removeClass("active-blog-post-7")    
+  })
+
+
+  //Parallax & fade on scroll 
+  
+  function scrollBanner() {
+    $(document).on('scroll', function(){
+    var scrollPos = $(this).scrollTop();
+    $('.parallax-fade-top').css({
+      'top' : (scrollPos/2)+'px',
+      'opacity' : 1-(scrollPos/240)
+    });
+    });    
+  }
+  scrollBanner(); 
+
+/*! Scroll Reveal Animations */
+
+window.scrollReveal=function(t){"use strict";function e(e){this.docElem=t.document.documentElement,this.options=this.extend(this.defaults,e),this.styleBank={},1==this.options.init&&this.init()}var i=1,o=function(){return t.requestAnimationFrame||t.webkitRequestAnimationFrame||t.mozRequestAnimationFrame||function(e){t.setTimeout(e,1e3/60)}}();return e.prototype={defaults:{after:"0s",enter:"bottom",move:"24px",over:"0.66s",easing:"ease-in-out",opacity:0,viewportFactor:.33,reset:!1,init:!0},init:function(){this.scrolled=!1;var e=this;this.elems=Array.prototype.slice.call(this.docElem.querySelectorAll("[data-scroll-reveal]")),this.elems.forEach(function(t,o){var r=t.getAttribute("data-scroll-reveal-id");r||(r=i++,t.setAttribute("data-scroll-reveal-id",r)),e.styleBank[r]||(e.styleBank[r]=t.getAttribute("style")),e.update(t)});var r=function(t){e.scrolled||(e.scrolled=!0,o(function(){e._scrollPage()}))},n=function(){function t(){e._scrollPage(),e.resizeTimeout=null}e.resizeTimeout&&clearTimeout(e.resizeTimeout),e.resizeTimeout=setTimeout(t,200)};t.addEventListener("scroll",r,!1),t.addEventListener("resize",n,!1)},_scrollPage:function(){var t=this;this.elems.forEach(function(e,i){t.update(e)}),this.scrolled=!1},parseLanguage:function(t){function e(t){var e=[],i=["from","the","and","then","but","with"];return t.forEach(function(t,o){i.indexOf(t)>-1||e.push(t)}),e}var i=t.getAttribute("data-scroll-reveal").split(/[, ]+/),o={};return i=e(i),i.forEach(function(t,e){switch(t){case"enter":return void(o.enter=i[e+1]);case"after":return void(o.after=i[e+1]);case"wait":return void(o.after=i[e+1]);case"move":return void(o.move=i[e+1]);case"ease":return o.move=i[e+1],void(o.ease="ease");case"ease-in":return o.move=i[e+1],void(o.easing="ease-in");case"ease-in-out":return o.move=i[e+1],void(o.easing="ease-in-out");case"ease-out":return o.move=i[e+1],void(o.easing="ease-out");case"over":return void(o.over=i[e+1]);default:return}}),o},update:function(t){var e=this.genCSS(t),i=this.styleBank[t.getAttribute("data-scroll-reveal-id")];return null!=i?i+=";":i="",t.getAttribute("data-scroll-reveal-initialized")||(t.setAttribute("style",i+e.initial),t.setAttribute("data-scroll-reveal-initialized",!0)),this.isElementInViewport(t,this.options.viewportFactor)?t.getAttribute("data-scroll-reveal-complete")?void 0:this.isElementInViewport(t,this.options.viewportFactor)?(t.setAttribute("style",i+e.target+e.transition),void(this.options.reset||setTimeout(function(){""!=i?t.setAttribute("style",i):t.removeAttribute("style"),t.setAttribute("data-scroll-reveal-complete",!0)},e.totalDuration))):void 0:void(this.options.reset&&t.setAttribute("style",i+e.initial+e.reset))},genCSS:function(t){var e,i,o=this.parseLanguage(t);o.enter?(("top"==o.enter||"bottom"==o.enter)&&(e=o.enter,i="y"),("left"==o.enter||"right"==o.enter)&&(e=o.enter,i="x")):(("top"==this.options.enter||"bottom"==this.options.enter)&&(e=this.options.enter,i="y"),("left"==this.options.enter||"right"==this.options.enter)&&(e=this.options.enter,i="x")),("top"==e||"left"==e)&&(o.move?o.move="-"+o.move:o.move="-"+this.options.move);var r=o.move||this.options.move,n=o.over||this.options.over,s=o.after||this.options.after,a=o.easing||this.options.easing,l=o.opacity||this.options.opacity,u="-webkit-transition: -webkit-transform "+n+" "+a+" "+s+",  opacity "+n+" "+a+" "+s+";transition: transform "+n+" "+a+" "+s+", opacity "+n+" "+a+" "+s+";-webkit-perspective: 1000;-webkit-backface-visibility: hidden;",c="-webkit-transition: -webkit-transform "+n+" "+a+" 0s,  opacity "+n+" "+a+" "+s+";transition: transform "+n+" "+a+" 0s,  opacity "+n+" "+a+" "+s+";-webkit-perspective: 1000;-webkit-backface-visibility: hidden;",f="-webkit-transform: translate"+i+"("+r+");transform: translate"+i+"("+r+");opacity: "+l+";",p="-webkit-transform: translate"+i+"(0);transform: translate"+i+"(0);opacity: 1;";return{transition:u,initial:f,target:p,reset:c,totalDuration:1e3*(parseFloat(n)+parseFloat(s))}},getViewportH:function(){var e=this.docElem.clientHeight,i=t.innerHeight;return i>e?i:e},getOffset:function(t){var e=0,i=0;do isNaN(t.offsetTop)||(e+=t.offsetTop),isNaN(t.offsetLeft)||(i+=t.offsetLeft);while(t=t.offsetParent);return{top:e,left:i}},isElementInViewport:function(e,i){var o=t.pageYOffset,r=o+this.getViewportH(),n=e.offsetHeight,s=this.getOffset(e).top,a=s+n,i=i||0;return r>=s+n*i&&a>=o||"fixed"==(e.currentStyle?e.currentStyle:t.getComputedStyle(e,null)).position},extend:function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i]);return t}},e}(window);
+
+  /* Scroll Animation */
+  
+  window.scrollReveal = new scrollReveal();
+
+  </script>
+
+</body>
+
+</html>
